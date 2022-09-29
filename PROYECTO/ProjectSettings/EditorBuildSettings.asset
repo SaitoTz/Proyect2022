@@ -8,4 +8,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Usuario.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Store.unity
+    guid: b190016e9bbde2243bea8a8943753b00
+  - enabled: 1
+    path: Assets/Scenes/Stats.unity
+    guid: 54cbc0a03019e9f49a20207e7b8ee94c
+  - enabled: 1
+    path: Assets/Scenes/Perfil.unity
+    guid: 26cb7e3caac1ed9478f1026f862e0608
+  - enabled: 1
+    path: Assets/Scenes/Opciones.unity
+    guid: 5a028c2cc92eabc489eac117e9bf0cbe
+  - enabled: 1
+    path: Assets/Scenes/Mapa_Ciudad.unity
+    guid: 6dac5f7f55f2af64fb2d2dc0c47eeefa
+  - enabled: 1
+    path: Assets/Scenes/Hogar.unity
+    guid: 91cb576ed4756964387622213e75704f
+  - enabled: 1
+    path: "Assets/Scenes/Descripci\xF3n_Mapa.unity"
+    guid: 9282e47ca9e8f614c88ccbadaac50346
+  - enabled: 1
+    path: Assets/Scenes/Craft.unity
+    guid: 678e787765ea2664bad28cd9b24840f0
+  - enabled: 1
+    path: "Assets/Scenes/Almac\xE9n.unity"
+    guid: 611637844e339864e8c2bac173a2958d
+  - enabled: 1
+    path: Assets/Scenes/MenuPrincipal.unity
+    guid: b0000271e77f95448879d21d071e8f7e
   m_configObjects: {}
