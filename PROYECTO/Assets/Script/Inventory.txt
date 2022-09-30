@@ -1,0 +1,61 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+
+public class Inventory : MonoBehavior
+{
+  public GameObject[] slots;
+  public GameObject backPack;
+  private bool isInstantiated;
+  TextMeshProUGUI text;
+  public ItemList itemList;     //only for Main inventory
+
+  public Dictionary<string, int> inventoryItems = new Dictionary<string, int>();
+
+  private void Start()
+  {
+    if(itemList != null)
+    {
+      DataToInventory();
+    }
+  }
+
+  public void CheckSlotsAvailability(GameObject itemToAdd, string itemName, int itemAmount)
+
+  public void UseInventoryItems(string itemName)
+  private void ReorganizeInventory()
+  public void DeactivateButtons()
+  public void ActivateButtons()
+
+  public void InventoryToData()
+  {
+    for (int i = 0; i < slots.Length; i++)
+    {
+      if (slots[i].GetComponent<SlotsScript>().isUsed)
+      {
+        if (!GameData.instance.saveData.goToAddId.Contains(slots[i].GetComponentInChildren<ItemsUse>().ID))
+        {
+          GameData.instance.saveData.goToAddId.Add(slots[i].GetComponentInChildren<ItemsUse>().ID);
+          GameData.instance.saveData.inventoryItemsName.Add(slots[i].GetComponentInChildren<ItemsUse>().name);
+          GameData.instance.saveData.inventoryItemsAmount.Add(inventoryItems[slots[i].GetComponentInChildren<ItemUse>().name]);
+        }
+      }
+    }
+  }
+
+  public void DataToInventory()
+  {
+    for (int i = 0; i < GameData.instance.saveData.goToAddId.count; i++)
+    {
+      for (int j = 0; j < itemList.item.Count; j++)
+      {
+        if(itemList.items[j].ID == GameData.instance.saveData.goToAddId[i])
+        {
+          CheckSlotsAvailability(itemList.items[j].gameObject, gameData.instance.saveData.inventoryItemsName[i], GameData.instance.saveData.inventoryItemsAmount[i]);
+        }
+      }
+    }
+  }
+}
