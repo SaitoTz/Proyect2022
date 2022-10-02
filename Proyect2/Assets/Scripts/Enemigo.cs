@@ -11,17 +11,19 @@ public class Enemigo : MonoBehaviour
 
     [SerializeField] private float tiempoDeVida;
 
+    public GameObject Corazon2;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -29,9 +31,12 @@ public class Enemigo : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             other.GetComponent<CombajeJugador>().TomarDaño(daño);
-            Destroy(gameObject);
 
-            SceneManager.LoadScene("Muerte");
+
+
+            Corazon2.gameObject.SetActive(false);
+
+
         }
     }
 

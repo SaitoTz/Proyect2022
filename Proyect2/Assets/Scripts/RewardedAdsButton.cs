@@ -1,7 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Advertisements;
- 
+using UnityEngine.SceneManagement;
+
 public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListener
 {
     [SerializeField] Button _showAdButton;
@@ -61,6 +62,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
             Debug.Log("Unity Ads Rewarded Ad Completed");
 
             //aqui pones la recompensa a dar, monedas, objetos...etc
+            SceneManager.LoadScene("Juego2");
 
             // Load another ad:
             Advertisement.Load(_adUnitId, this);
